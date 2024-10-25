@@ -1,0 +1,117 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #dea5ff 0%, rgba(255, 105, 180, 0.3) 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.results-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(145deg, #fff0f5, #ffe4e1);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.3);
+}
+
+.results-title {
+  color: #ff69b4;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.winner-message {
+  background: linear-gradient(45deg, #ffb6c1, #ffc0cb);
+  color: #4b0082;
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+.scores-list {
+  list-style: none;
+  padding: 0;
+}
+
+.scores-list li {
+  background: rgba(255, 182, 193, 0.2);
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  color: #4b0082;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.scores-list li:hover {
+  transform: translateX(10px);
+  background: rgba(255, 182, 193, 0.4);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 600px) {
+  .results-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  .results-title {
+    font-size: 2rem;
+  }
+  
+  .winner-message {
+    font-size: 1.2rem;
+  }
+  
+  .scores-list li {
+    font-size: 1rem;
+  }
+}
+
+.sort-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sort-btn {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.sort-btn:hover {
+  background: #ff1493;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+}
+
+.sort-btn:active {
+  transform: translateY(0);
+}

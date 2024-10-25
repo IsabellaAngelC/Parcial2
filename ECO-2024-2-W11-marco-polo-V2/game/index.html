@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERAAAAAAAAERAQAAAAAAEBEAEAAAAAEAEQABAAAAEAARAAAQAAEAABEAAAEAEAAAEQAAABEAAAARAAAAEQAAABEAAAEAEAAAEQAAEAABAAARAAEAAAAQABEAEAAAAAEAEQEAAAAAABAREAAAAAAAAREREREREREREAAAAAP/wAAF/6AABv9gAAd+4AAHveAAB9vgAAfn4AAH5+AAB9vgAAe94AAHfuAABv9gAAX/oAAD/8AAAAAAAA"
+    rel="icon" type="image/x-icon" />
+  <title>GAME</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1>¡Juega a Marco - Polo!</h1>
+  <div id="home-welcome-screen">
+    <h2>Bienvenidos</h2>
+    <p>Ingresa tu nombre de usuario para unirte al juego</p>
+    <div id="form">
+      <input type="text" id="nickname" placeholder="Nombre" />
+      <button id="join-button">Unirte al juego</button>
+    </div>
+  </div>
+  <div id="lobby-screen">
+    <h2 id="nickname-display">Nombre</h2>
+    <p>
+      Esperando a que otros se unan:
+      <b id="users-count"> <b>0</b></b> usuarios en la sala
+    </p>
+    <button id="start-button">Start game</button>
+  </div>
+  <div id="game-ground">
+    <h2 id="game-nickname-display"></h2>
+    <p>Tu rol es:</p>
+    <h2 id="role-display"></h2>
+    <h2 id="shout-display"></h2>
+    <div id="pool-players"></div>
+    <button id="shout-button"></button>
+  </div>
+  <div id="game-over">
+    <h1>Se acabó el juego</h1>
+    <h2 id="game-result"></h2>
+    <button id="restart-button">Reiniciar Juego</button>
+  </div>
+  <script src="../node_modules/socket.io-client/dist/socket.io.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

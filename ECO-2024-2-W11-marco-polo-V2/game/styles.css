@@ -1,0 +1,108 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #dea5ff 0%, rgba(255, 105, 180, 0.3) 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  #home-welcome-screen,
+  #lobby-screen,
+  #game-ground,
+  #game-over {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(250, 212, 231, 0.337);
+    box-shadow: 0 4px 8px rgba(203, 23, 107, 0.521);
+    animation: slideIn 1s ease-in-out;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="text"] {
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.7rem 1.5rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #dea5ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #bf6af0;
+  }
+
+  #pool-players {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    button {
+        color: rgb(26, 26, 26);
+        background-color: #c6a6f8;
+        margin: 0px;
+    }
+    p {
+        margin: 0px;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
